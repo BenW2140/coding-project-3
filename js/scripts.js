@@ -1,4 +1,4 @@
-const mrRogersReplacer = function (num) {
+const mrRogersReplacer = function (num, name) {
   const numbers = [];
   if (num < 0) {
     return "Please enter a positive number";
@@ -12,7 +12,7 @@ const mrRogersReplacer = function (num) {
     //   }
     // }
     if (numbers[i].includes('3')) {
-      numbers[i] = numbers[i].replace(numbers[i], " Won't you be my neighbor?");
+      numbers[i] = numbers[i].replace(numbers[i], " Won't you be my neighbor, " + name + "?");
     } else if (numbers[i].includes('2')) {
       numbers[i] = numbers[i].replace(numbers[i], ' Boop!');
     } else if (numbers[i].includes('1')) {
@@ -27,7 +27,8 @@ $(document).ready(function() {
     event.preventDefault();
 
     const number = $("input#number").val();
-    const replacedNumbers = mrRogersReplacer(number);
+    const userName = $("input#name").val();
+    const replacedNumbers = mrRogersReplacer(number, userName);
 
     $("#output").text(replacedNumbers);
   });
