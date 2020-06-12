@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  
+
   text-align: center;
 }
 
@@ -18,4 +18,11 @@ button {
   background-color: darkslategray;
   border-radius: 15px;
   padding: 20px;
+}
+
+#output {
+  background-color: steelblue;
+  border-radius: 15px;
+  padding: 20px;
+  display: none;
 }
