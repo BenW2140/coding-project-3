@@ -28,7 +28,11 @@ $(document).ready(function() {
     const answer = $("input:radio[name=question]:checked").val();
     const replacedNumbers = mrRogersReplacer(number, userName, answer);
 
-    $("#output").text(replacedNumbers);
-    $("#output").slideDown("slow");
+    $("#result").text(replacedNumbers);
+    $("#result").slideDown("slow");
+    $("#toggle-results").fadeIn();
+    $("button#toggle-results").click(function() {
+      $("#result").slideToggle();
+    })
   });
 });
