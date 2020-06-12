@@ -29,6 +29,6 @@ $(document).ready(function() {
     const replacedNumbers = mrRogersReplacer(number, userName, answer);
 
     $("#output").text(replacedNumbers);
-    $("#output").show();
+    $("#output").slideDown("slow");
   });
 });

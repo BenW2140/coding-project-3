@@ -6,7 +6,6 @@ body {
 }
 
 h1 {
-
   text-align: center;
 }
 
@@ -18,6 +17,8 @@ button {
   background-color: darkslategray;
   border-radius: 15px;
   padding: 20px;
+  position: relative;
+  top: 100px;
 }
 
 #output {
@@ -25,4 +26,6 @@ button {
   border-radius: 15px;
   padding: 20px;
   display: none;
+  position: relative;
+  top: 100px;
 }
