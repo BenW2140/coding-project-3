@@ -1,5 +1,8 @@
 const mrRogersReplacer = function (num) {
   const numbers = [];
+  if (num < 0) {
+    return "Please enter a positive number";
+  }
   for (let i = 0; i <= num; i++) {
     numbers.push(' ' + i + '');
     // for (let j = 0; j < numbers[i].length; j++) {
