@@ -8,7 +8,9 @@ const mrRogersReplacer = function (num) {
     //     numbers[i] = numbers[i].replace(numbers[i], 'Beep!');
     //   }
     // }
-    if (numbers[i].includes('1')) {
+    if (numbers[i].includes('2')) {
+      numbers[i] = numbers[i].replace(numbers[i], 'Boop!');
+    } else if (numbers[i].includes('1')) {
       numbers[i] = numbers[i].replace(numbers[i], 'Beep!');
     }
     console.log(numbers);
