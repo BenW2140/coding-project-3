@@ -3,6 +3,11 @@ body {
   background-color: darkslategray;
   color: ghostwhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  top: 50px;
+  max-width: 500px;
+  margin: auto;
+  float: left;
 }
 
 h1 {
@@ -17,15 +22,11 @@ button {
   background-color: darkslategray;
   border-radius: 15px;
   padding: 20px;
-  position: relative;
-  top: 100px;
 }
 
 #output {
   background-color: steelblue;
+  display: none;
   border-radius: 15px;
   padding: 20px;
-  display: none;
-  position: relative;
-  top: 100px;
 }
